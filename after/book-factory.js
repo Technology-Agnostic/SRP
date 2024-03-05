@@ -1,4 +1,4 @@
-const Book = require('../book');
+const Book = require('./book');
 
 class BookFactory {
     createBook(bookData) {

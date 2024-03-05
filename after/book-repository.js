@@ -1,9 +1,10 @@
-class BookRepository {
+class BookRepositoty {
     constructor(logger, cache, bookFactory) {
         this.logger = logger;
         this.cache = cache;
         this.bookFactory = bookFactory;
-        this.booksStorageUrl = 'example://api.books-storage.com/books';
+
+        this.booksStorageUrl = 'example://api.books-storage/books';
     }
 
     async getBooks() {
@@ -14,12 +15,10 @@ class BookRepository {
                 this.logger.info('getBooks', 'requested books', booksData);
                 return booksData;
             });
-
         const books = booksData.map(this.bookFactory.createBook);
-
         this.cache.setData(books);
         return books;
     }
 }
 
-module.exports = BookRepository;
+module.exports = BookRepositoty;

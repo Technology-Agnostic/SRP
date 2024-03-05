@@ -6,6 +6,6 @@ Example of fix for single responsibility principle violation. Class "BookLibrary
 
 ### Setup
 
-Install NodeJS v16.14.2
+Install NodeJS v20.11.0
 
 Run `npm install` and then `npm run test`

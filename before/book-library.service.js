@@ -1,10 +1,10 @@
-const Book = require('../book');
+const Book = require('./book');
 
 class BookLibraryService {
     constructor() {
         this.cache = null;
         this.isInvalidCache = false;
-        this.booksStorageUrl = 'example://api.books-storage.com/books';
+        this.booksStorageUrl = 'example://api.books-storage/books';
     }
 
     async getBooksJSON() {

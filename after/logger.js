@@ -1,8 +1,8 @@
 class Logger {
-    info(...data) {
+    info(...logData) {
         const date = new Date().toISOString();
         const prefix = '[info]';
-        console.log(prefix, date, data);
+        console.log(...logData);
     }
 }
 
