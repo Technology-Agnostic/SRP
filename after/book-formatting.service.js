@@ -1,6 +1,5 @@
 class BookFormattingService {
-    constructor(logger, bookRepository) {
-        this.logger = logger;
+    constructor(bookRepository) {
         this.bookRepository = bookRepository;
     }
 

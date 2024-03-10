@@ -41,7 +41,7 @@ describe('BookFormattingService', () => {
     const bookCSVFormatter = new BookCSVFormatter(logger);
     const bookFactory = new BookFactory();
     const bookRepository = new BookRepositoty(logger, cache, bookFactory);
-    const bookFormattingService = new BookFormattingService(logger, bookRepository);
+    const bookFormattingService = new BookFormattingService(bookRepository);
 
     it('getBooksCSV should return list of books in CSV format', async () => {
         const EXPECTED_BOOKS_CSV = `data:text/csv;charset=utf-8,Alex Korb,The Upward Spiral,March 2015,A masterful account of the neuroscience behind depression, as well as of concrete steps that will lead to an "upward spiral" out of depression,13.99
