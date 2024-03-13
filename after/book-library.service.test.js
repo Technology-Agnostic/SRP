@@ -5,7 +5,7 @@ const Cache = require('./cache');
 const BookJSONFormatter = require('./book-json-formatter');
 const BookCSVFormatter = require('./book-csv-formatter');
 const BookFactory = require('./book-factory');
-const BookRepositoty = require('./book-repository');
+const BookRepository = require('./book-repository');
 const BookFormattingService = require('./book-formatting.service');
 
 describe('BookFormattingService', () => {
@@ -40,7 +40,7 @@ describe('BookFormattingService', () => {
     const bookJSONFormatter = new BookJSONFormatter(logger);
     const bookCSVFormatter = new BookCSVFormatter(logger);
     const bookFactory = new BookFactory();
-    const bookRepository = new BookRepositoty(logger, cache, bookFactory);
+    const bookRepository = new BookRepository(logger, cache, bookFactory);
     const bookFormattingService = new BookFormattingService(bookRepository);
 
     it('getBooksCSV should return list of books in CSV format', async () => {

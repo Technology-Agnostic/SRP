@@ -1,4 +1,4 @@
-class BookRepositoty {
+class BookRepository {
     constructor(logger, cache, bookFactory) {
         this.logger = logger;
         this.cache = cache;
@@ -21,4 +21,4 @@ class BookRepositoty {
     }
 }
 
-module.exports = BookRepositoty;
+module.exports = BookRepository;
