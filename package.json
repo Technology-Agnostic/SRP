@@ -2,9 +2,9 @@
   "name": "srp",
   "version": "1.0.0",
   "description": "example for single responsibility principle",
-  "main": "book-library.test.js",
+  "main": "book-formatting.service.test.js",
   "scripts": {
-    "test": "mocha after/book-library.service.test.js"
+    "test": "mocha after/book-formatting.service.test.js"
   },
   "repository": {
     "type": "git",
